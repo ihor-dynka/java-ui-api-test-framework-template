@@ -1,0 +1,39 @@
+plugins {
+    id 'java'
+    id "io.freefair.lombok" version '5.1.0'
+    id 'io.qameta.allure' version '2.9.6'
+    id 'checkstyle'
+}
+
+group 'com.ihor-dynka.tests'
+version '1.0.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation project(':test_framework')
+}
+
+clean {
+    delete '/build'
+    delete '/swagger-coverage-output'
+    delete '/swagger-coverage-report.html'
+    delete '/swagger-coverage-results.json'
+    delete '/swagger.json'
+}
+
+test {
+    useJUnitPlatform()
+
+    testLogging.showStandardStreams = true
+}
+
+allure {
+    version = "2.17.2"
+
+    useJUnit5 {
+        version = "2.17.2"
+    }
+}

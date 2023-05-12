@@ -1,0 +1,16 @@
+plugins {
+    id 'java'
+    id 'checkstyle'
+}
+
+group 'com.ihor-dynka.tests'
+version '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+checkstyle {
+    version = 9.2
+    configFile file('config/checkstyle/checkstyle.xml')
+}

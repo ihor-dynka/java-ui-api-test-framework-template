@@ -1,0 +1,11 @@
+<aspectj>
+    <weaver>
+        <include within="com.ihor_dynka.tests.steps.*"/>
+    </weaver>
+    <weaver>
+        <include within="com.ihor_dynka.steps.*"/>
+    </weaver>
+    <aspects>
+        <aspect name="aspects.LogAspect"/>
+    </aspects>
+</aspectj>

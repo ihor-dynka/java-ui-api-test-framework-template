@@ -1,0 +1,7 @@
+.gradle
+.idea
+api-tests/build
+api-tests/swagger.json
+api-tests/swagger-coverage-output
+test_framework/build
+

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suppressions PUBLIC "-//Checkstyle//DTD SuppressionFilter Configuration 1.2//EN" "https://checkstyle.org/dtds/suppressions_1_2.dtd">
+
+<suppressions>
+    <suppress checks="MagicNumber" files=".*[\\/]src[\\/](test|it)[\\/]" />
+    <suppress checks="MethodName" files=".*[\\/]src[\\/](test|it)[\\/]" />
+    <suppress checks="MultipleStringLiterals" files=".*[\\/]src[\\/](test|it)[\\/]" />
+    <suppress checks="HideUtilityClassConstructor" files="Application.java" />
+    <suppress checks="ParameterAssignment" files="TracingSimpleThreadPool.java" />
+</suppressions>

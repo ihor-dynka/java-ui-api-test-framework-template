@@ -1,0 +1,1 @@
+./gradlew api-tests:clean api-tests:test

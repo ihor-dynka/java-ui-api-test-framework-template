@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+    id 'checkstyle'
+}
+
+group 'com.ihor-dynka.tests'
+version '1.0.0'
+
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
+
+repositories {
+    mavenCentral()
+}
+
+configurations.all {
+    exclude group: 'org.slf4j', module: 'slf4j-log4j12'
+    exclude group: 'log4j', module: 'log4j'
+}
+
+dependencies {
+    implementation project(':test_framework')
+}

@@ -1,0 +1,5 @@
+rootProject.name = 'automated_tests'
+include 'test_framework', 'api-tests'
+include 'ui-tests'
+include 'common'
+
